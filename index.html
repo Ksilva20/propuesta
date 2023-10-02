@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>¡Quiero Casarme Contigo!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #mensaje {
+            font-size: 24px;
+            margin: 30px;
+        }
+        #acepto, #noacepto {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 600px) {
+            #acepto, #noacepto {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="mensaje">¿Quieres casarte conmigo?</div>
+    <button id="acepto">Acepto</button>
+    <button id="noacepto">No Acepto</button>
+    <div id="respuesta"></div>
+
+    <script>
+        const aceptoButton = document.getElementById('acepto');
+        const noAceptoButton = document.getElementById('noacepto');
+        const respuestaDiv = document.getElementById('respuesta');
+
+        aceptoButton.addEventListener('click', () => {
+            respuestaDiv.innerHTML = "Queridos Rourys, ¡Hoy es el gran día, y es hora de hacerlo oficial! Con la autoridad conferida por el poder del amor y la felicidad en el aire, ¡los declaro marido y mujer! 🎉💑 Pueden besarse y celebrar este nuevo capítulo de sus vidas. ¡Felicidades a la pareja más increíble! Con cariño, amor, diversión y mucho sexo.";
+        });
+
+        noAceptoButton.addEventListener('click', () => {
+            respuestaDiv.innerHTML = "Debes aceptar sí o sí.";
+        });
+    </script>
+</body>
+</html>
+
+
+
+
